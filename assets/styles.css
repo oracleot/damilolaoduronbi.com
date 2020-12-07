@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Source+Sans+Pro&display=swap');
+
+* {
+  transition: 0.3s all;
+}
+
+h3, .poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section {
+  position: relative;
+}
+
+.short-line,
+.long-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+}
+
+.short-line {
+  height: 70px;
+}
+
+.long-line {
+  height: 150px;
+}
+
+#mode-toggler {
+  width: 160px;
+}
