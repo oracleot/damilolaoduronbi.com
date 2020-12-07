@@ -32,51 +32,63 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <div class="pt-12 pb-12 welcome text-center">
-    <h1 class="text-6xl font-bold text-gray-400">Hi, I'm Damilola O.</h1>
-    <p class="text-xl pt-2 poppins dark-mode-text-compliant">Frontend Developer with ~ 6 years experience</p>
-    <p class="pt-4">
-      <a
-        target="_blank"
-        rel='noreferrer'
-        class="social-link"
-        href="https://www.linkedin.com/in/doduronbi/">
-        LinkedIn
-      </a>
-      <a
-        target="_blank"
-        rel='noreferrer'
-        class="social-link"
-        href="http://github.com/oracleot">
-        GitHub
-      </a>
-      <a
-        target="_blank"
-        rel='noreferrer'
-        class="social-link"
-        href="https://profile.codersrank.io/user/oracleot">
-        CoderRank
-      </a>
-      <a
-        target="_blank"
-        rel='noreferrer'
-        class="social-link"
-        href="https://docs.google.com/document/d/1zhaTDfRFo71sz9bapEFUBQOw2indEVTpr4sLARel0W8/edit?usp=sharing">
-        Resume
-      </a>
-    </p>
-    <img
-      id='web-dev-illustration'
-      class="animate__bounce animate__repeat-3 mx-auto mt-8 web-dev"
-      src="./assets/img/dev.svg" width="200" alt="Web Dev Illustration">
-    <p class="text-xl py-4 dark-mode-text-compliant">Welcome to my personal portfolio 🤝</p>
-    <button class="text-sm py-2 rounded" id="mode-toggler"></button>
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row space-x-4 py-16 items-center text-center md:text-left">
+      <div class="flex-1 p-8 md:pr-12">
+        <h1 class="text-5xl text-gray-400">Hi, I'm Damilola Oduronbi</h1>
+        <p class="text-lg pt-2 poppins dark-mode-text-compliant">Frontend Developer with ~ 6 years experience</p>
+        <img
+          id='web-dev-illustration'
+          class="animate__bounce animate__repeat-3 mt-4 web-dev"
+          src="./assets/img/dev.svg" width="120" alt="Web Dev Illustration">
+        <p class="pt-4">
+          <a
+            target="_blank"
+            rel='noreferrer'
+            class="social-link"
+            href="https://www.linkedin.com/in/doduronbi/">
+            LinkedIn
+          </a>
+          <a
+            target="_blank"
+            rel='noreferrer'
+            class="social-link"
+            href="http://github.com/oracleot">
+            GitHub
+          </a>
+          <a
+            target="_blank"
+            rel='noreferrer'
+            class="social-link"
+            href="https://profile.codersrank.io/user/oracleot">
+            CoderRank
+          </a>
+          <a
+            target="_blank"
+            rel='noreferrer'
+            class="social-link"
+            href="https://docs.google.com/document/d/1zhaTDfRFo71sz9bapEFUBQOw2indEVTpr4sLARel0W8/edit?usp=sharing">
+            Resume
+          </a>
+        </p>
+        <p class="text-xl py-4 dark-mode-text-compliant">Welcome to my personal portfolio 🤝</p>
+        <button class="text-sm py-2 rounded" id="mode-toggler"></button>
+      </div>
+      <div class="section bg-white flex-1 shadow-2xl cursor-pointer py-4 rounded-xl">
+        <codersrank-skills-chart
+          username="oracleot"
+          legend
+          tooltip
+          skills='HTML, CSS, JavaScript, Python, Ruby'>
+          </codersrank-skills-chart>
+      </div>
+    </div>
   </div>
   <div class="my-12 text-center">
-    <h3 class="text-5xl font-extrabold pb-4 text-gray-600">Recent Projects</h3>
+    <h3 class="text-5xl font-extrabold text-gray-600">Recent Projects</h3>
   </div>
   <div class="container mx-auto">
-    <div class="lg:px-32">
+    <div class="lg:px-16">
       <div class="flex flex-col md:flex-row space-x-4 py-16 items-center text-center md:text-left">
         <div class="flex-1 p-8 md:pr-12 order-2 md:order-first">
           <h3 class="text-3xl text-yellow-700 mb-3 font-extrabold">TalentUp Africa</h3>
@@ -87,10 +99,10 @@
             &#34;I create re-usable components and custom hooks for the frontend of the web application
           </p>
           <p class="pb-5">
-            <span class="px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">Redux</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React Router</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React Bootstrap</span>
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">Redux</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React Router</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-900 font-extrabold text-sm">React Bootstrap</span>
           </p>
           <p class="pt-4">
             <a
@@ -125,10 +137,10 @@
             &#34;I revamped the entire website
           </p>
           <p class="pb-5">
-            <span class="px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">HTML5</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">CSS</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">JavaScript</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">Bootstrap</span>
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">HTML5</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">CSS</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">JavaScript</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-green-100 text-green-900 font-extrabold text-sm">Bootstrap</span>
           </p>
           <p class="pt-4">
             <a
@@ -153,10 +165,10 @@
             &#34;I built the self-service app
           </p>
           <p class="pb-5">
-            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">HTML5</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">CSS</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">JavaScript</span>&ensp;
-            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">Firebase</span>
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">HTML5</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">CSS</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">JavaScript</span>&ensp;
+            <span class="inline-block my-1 px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-sm">Firebase</span>
           </p>
           <p class="pt-4">
             <a
@@ -188,14 +200,16 @@
       </a>
     </h2>
   </div>
-  <div class="my-12 text-center">
-    <h3 class="text-5xl font-extrabold pb-4 text-indigo-200">Experiments</h3>
-    <p class="dark-mode-text-compliant">Code experiments loading...</p>
+  <div class="my-12 text-center md:w-1/2 mx-auto">
+    <h3 class="text-5xl font-extrabold pt-12 pb-4 text-gray-200">Experiments & Tips</h3>
+    <p class="dark-mode-text-compliant">My code experiments and tips loading...</p>
   </div>
   <div class="py-4 text-center dark-mode-text-compliant">
     Damilola Oduronbi &copy; 2020
   </div>
 
+  <!-- replace x.x.x with actual version -->
+  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
   <script src='./assets/app.js'></script>
 </body>
 </html>
