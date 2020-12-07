@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Source+Sans+Pro&display=swap');
 
-* {
+*, *::before {
   transition: 0.3s all;
 }
 
@@ -34,4 +34,27 @@ h1, p {
 
 #mode-toggler {
   width: 160px;
+}
+
+.social-link {
+  color: #BE185D;
+  padding: 0 5px;
+  position: relative;
+}
+
+.social-link::before {
+  position: absolute;
+  content: '';
+  right: 5px;
+  bottom: 0;
+  width: 10px;
+  height: 2px;
+  opacity: 0.3;
+  background-color: #BE185D;
+}
+
+.social-link:hover::before {
+  right: 10px;
+  opacity: 1;
+  width: 30px;
 }
