@@ -75,12 +75,8 @@
         <button class="text-sm py-2 rounded" id="mode-toggler"></button>
       </div>
       <div class="section bg-white flex-1 shadow-2xl cursor-pointer py-4 rounded-xl">
-        <codersrank-skills-chart
-          username="oracleot"
-          legend
-          tooltip
-          skills='HTML, CSS, JavaScript, Python, Ruby'>
-          </codersrank-skills-chart>
+        <codersrank-summary username="oracleot"></codersrank-summary>
+        <codersrank-activity username="oracleot" tooltip labels legend></codersrank-activity>
       </div>
     </div>
   </div>
@@ -208,8 +204,8 @@
     Damilola Oduronbi &copy; 2020
   </div>
 
-  <!-- replace x.x.x with actual version -->
-  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js" defer></script>
+  <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js" defer></script>
   <script src='./assets/app.js'></script>
 </body>
 </html>
